@@ -1,0 +1,33 @@
+/* css resetting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.parent-of-section {
+  border: 1px solid black;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  /* row , column */
+  justify-content: space-evenly;
+  /* left right center space-b space-e space-a */
+
+  align-items: center;
+}
+
+.parent-of-section > section {
+  width: 20%;
+  height: 20vh;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+.section-1 {
+}
+.section-2 {
+}
+.section-3 {
+}
+.section-4 {
+}

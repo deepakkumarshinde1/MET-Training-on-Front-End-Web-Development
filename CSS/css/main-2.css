@@ -1,0 +1,48 @@
+/* css resetting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.menu {
+  /* background-color: yellow; */
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  border-bottom: 2px solid magenta;
+}
+.menu-item {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-color: magenta;
+  color: white;
+}
+
+/* card */
+
+.card {
+  display: flex;
+  border: 1px solid black;
+  width: 40%;
+  margin: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.right-side > img {
+  width: 250px;
+}
+
+.left-side {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

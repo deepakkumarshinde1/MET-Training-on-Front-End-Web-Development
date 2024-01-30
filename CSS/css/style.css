@@ -1,0 +1,12 @@
+mark {
+  background-color: green !important;
+  color: white;
+}
+
+body {
+  background-color: yellow;
+}
+
+mark {
+  background-color: magenta;
+}

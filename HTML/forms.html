@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Form</title>
+  </head>
+  <body>
+    <h1>User Form</h1>
+    <form action="">
+      <div>
+        <label for="">Full Name</label>
+        <input
+          type="text"
+          placeholder="Enter Name"
+          required
+          value="Deepak"
+          readonly
+          disabled
+        />
+      </div>
+
+      <div>
+        <label for="user_name">Email</label>
+        <input id="user_name" type="email" placeholder="Enter Email" disabled />
+      </div>
+
+      <div>
+        <label for="">Gender</label>
+        <div>
+          <label for="">Male</label>
+          <input type="radio" name="gender" />
+        </div>
+        <div>
+          <label for="">Female</label>
+          <input type="radio" name="gender" checked />
+        </div>
+      </div>
+      <div>
+        <label for="">Mobile</label>
+        <input type="number" placeholder="Enter Mobile" required />
+      </div>
+
+      <div>
+        <label for="">DOB</label>
+        <input type="date" />
+      </div>
+
+      <div>
+        <label for="">Address</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="">City</label>
+        <select name="" id="" multiple>
+          <option value="">---- Select ----</option>
+          <option value="">City-2</option>
+          <option value="">City-3</option>
+          <option value="">City-4</option>
+          <option value="">City-5</option>
+          <option value="">City-6</option>
+          <option value="">City-7</option>
+          <option value="" selected>City-8</option>
+        </select>
+      </div>
+      <div>
+        <input type="checkbox" />
+        <label for="">I agree</label>
+      </div>
+      <div>
+        <input type="time" />
+        <input type="search" list="options" />
+
+        <datalist id="options">
+          <option value="Option 1"></option>
+          <option value="Option 2"></option>
+          <option value="Option 3"></option>
+          <option value="Option 4"></option>
+          <option value="Option 5"></option>
+        </datalist>
+      </div>
+      <div>
+        <button type="submit">Save</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
