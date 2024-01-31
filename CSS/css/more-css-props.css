@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.text-props {
+  display: none;
+  border: 1px solid black;
+  width: 50%;
+  text-align: justify;
+  text-transform: capitalize;
+  /* font-variant: small-caps; */
+  word-spacing: 1rem;
+  /* line-height: 4rem; */
+
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: oblique;
+  opacity: 0;
+}
+
+.text-props > span {
+  letter-spacing: 0.5rem;
+}
+
+.text-props-1 {
+  margin-top: 10px;
+  text-decoration: overline;
+  text-decoration-color: green;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  text-shadow: 0px 0px 4px gray;
+  color: transparent;
+  /* x-axis y-axis blur color */
+
+  transition-property: text-shadow, font-size;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  font-size: 3rem;
+  text-shadow: 0px 0px 0px green;
+}
