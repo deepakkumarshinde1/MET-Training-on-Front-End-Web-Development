@@ -178,3 +178,7 @@ a {
 .btn-danger:hover {
   box-shadow: 0 0 5px 2px red;
 }
+
+.d-none {
+  display: none !important;
+}

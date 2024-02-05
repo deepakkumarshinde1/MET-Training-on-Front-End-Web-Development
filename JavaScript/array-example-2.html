@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Example</title>
+    <style>
+      div {
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      table th,
+      table td {
+        border: 1px dashed black;
+      }
+      table th,
+      table td {
+        padding: 0.5rem 1rem;
+      }
+
+      table th {
+        background-color: magenta;
+        color: white;
+      }
+      table tbody tr:nth-child(even) {
+        background-color: rgb(52, 252, 252);
+      }
+      table tbody tr:nth-child(odd) {
+        background-color: rgb(246, 195, 248);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <input type="text" placeholder="Brand Name" id="brandName" />
+      </div>
+      <div>
+        <input type="text" placeholder="Site Link" id="siteLink" />
+      </div>
+      <div>
+        <select id="siteType">
+          <option value="">---- select ---</option>
+          <option value="Public">Public</option>
+          <option value="Private">Private</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Site Status</label>
+        <div>
+          <input
+            type="radio"
+            value="Online"
+            name="site_status"
+            id="site_online"
+          />
+          <label for="site_online">Online</label>
+
+          <input
+            type="radio"
+            value="Offline"
+            name="site_status"
+            id="site_offline"
+          />
+          <label for="site_offline">Offline</label>
+        </div>
+      </div>
+      <div>
+        <label for="">Site Use For </label>
+        <div>
+          <input type="checkbox" id="buy" value="buy" /><label for="buy"
+            >Buy</label
+          >
+          <input type="checkbox" id="search" value="search" /><label
+            for="search"
+            >Search</label
+          >
+          <input type="checkbox" id="download" value="download" /><label
+            for="download"
+            >Download
+          </label>
+          <input type="checkbox" id="watch-video" value="watch video" /><label
+            for="watch-video"
+            >Watch Video</label
+          >
+          <input type="checkbox" id="chat-online" value="chat online" /><label
+            for="chat-online"
+            >Chat Online</label
+          >
+        </div>
+      </div>
+      <div>
+        <button id="save">Save</button>
+      </div>
+    </section>
+    <!-- <ul id="siteList"></ul> -->
+    <table>
+      <thead>
+        <tr>
+          <th width="10%">Sr No</th>
+          <th width="40%">Brand Name</th>
+          <th width="10%">Site</th>
+          <th width="10%">Type</th>
+          <th width="10%">Status</th>
+          <th width="20%">Site Use</th>
+        </tr>
+      </thead>
+      <tbody id="siteList"></tbody>
+    </table>
+    <script src="./array-example-2.js"></script>
+  </body>
+</html>

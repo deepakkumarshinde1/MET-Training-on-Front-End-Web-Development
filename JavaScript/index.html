@@ -5,43 +5,17 @@
   </head>
   <body>
     <noscript>Js is disabled</noscript>
-    <h1>Javascript</h1>
-    <script>
-      //   alert1("Welcome");
-      console.log("Welcome", 10, true);
-      let studentName = "Deepak";
-      studentName = "Suraj";
-      console.log(typeof studentName);
-      studentName = 10.5;
-      console.log(typeof studentName);
-      studentName = true;
-      console.log(typeof studentName);
-      studentName = null;
-      console.log(typeof studentName);
-      let rollNo;
-      console.log(rollNo);
+    <input type="number" placeholder="Enter A Number" id="inputOne" />
+    <input type="number" placeholder="Enter A Number" id="inputTwo" />
+    <select name="" id="opt">
+      <option value="add">Add</option>
+      <option value="sub">Sub</option>
+      <option value="multi">Mult</option>
+      <option value="div">Div</option>
+    </select>
 
-      const pie = 10;
-      console.log(pie);
-
-      let numberOne = Number("10a");
-      let numberTwo = 20;
-      let result = numberOne + numberTwo;
-      isNaN("a");
-      let a;
-      let b;
-
-      console.log(a + b);
-
-      //   array
-      let array = [1, "a", true, null];
-      console.log(array[4]);
-
-      if (true === 1) {
-        console.log("yes");
-      } else {
-        console.log("NO");
-      }
-    </script>
+    <button id="resultCheck">=</button>
+    <p>Result is: <span id="result">0</span></p>
+    <script src="./cacl.js"></script>
   </body>
 </html>

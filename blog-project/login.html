@@ -21,56 +21,74 @@
             <label for=""
               ><i class="fa fa-user-secret" aria-hidden="true"></i
             ></label>
-            <input type="text" name="" id="" placeholder="Enter UserName" />
+            <input
+              type="email"
+              id="lUserName"
+              name=""
+              placeholder="Enter UserName"
+            />
           </div>
           <div>
             <label for=""><i class="fa fa-key" aria-hidden="true"></i></label>
-            <input type="password" name="" id="" placeholder="Enter Password" />
+            <input
+              type="password"
+              id="lPassword"
+              name=""
+              placeholder="Enter Password"
+            />
           </div>
           <div class="sign-in">
-            <button type="button">
+            <button type="button" id="signIn">
               <i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp;Login
             </button>
             <a href="#">Forget Password</a>
           </div>
           <div>
             <p class="align-right">
-              Don't have account? <a href="#">Create a new</a>
+              Don't have account?
+              <a href="#" class="create-account">Create a new</a>
             </p>
           </div>
         </form>
       </section>
     </main>
 
-    <section class="pop-registration">
+    <section class="pop-registration d-none">
       <section class="user-registration">
         <form action="#">
           <div>
             <label for="">Name</label>
-            <input type="text" placeholder="Enter FullName" />
+            <input type="text" id="fullName" placeholder="Enter FullName" />
           </div>
           <div>
             <label for="">Email</label>
-            <input type="text" placeholder="Enter Email" />
+            <input type="text" id="email" placeholder="Enter Email" />
           </div>
           <div>
             <label for="">Mobile</label>
-            <input type="text" placeholder="Enter Mobile" />
+            <input type="text" id="mobile" placeholder="Enter Mobile" />
           </div>
           <div>
             <label for="">Password</label>
-            <input type="text" placeholder="Enter Password" />
+            <input type="password" id="password" placeholder="Enter Password" />
           </div>
           <div>
             <label for="">Confirm Password</label>
-            <input type="text" placeholder="Enter Confirm Password" />
+            <input
+              type="text"
+              id="cpassword"
+              placeholder="Enter Confirm Password"
+            />
           </div>
           <div>
-            <button class="btn btn-success">Save</button>
-            <button class="btn btn-danger">Cancel</button>
+            <button type="button" id="save" class="btn btn-success">
+              Save
+            </button>
+            <button type="button" class="cancel btn btn-danger">Cancel</button>
           </div>
         </form>
       </section>
     </section>
+    <script src="./js/login.js"></script>
   </body>
 </html>

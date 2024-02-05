@@ -15,19 +15,17 @@
     <main>
       <header class="main-header">
         <section class="brand">
-          <span>DevNode.io</span>
+          <span><a href="/">DevNode.io</a></span>
         </section>
         <ul class="menu">
-          <li>My Feed</li>
+          <li><a href="/">Feed</a></li>
           <li>About Us</li>
           <li>Contact</li>
         </ul>
         <section>
-          <button class="write-btn">
-            Write
+          <span id="welcome-text">Welcome, Deepak</span>
 
-            <i class="fa fa-edit"></i>
-          </button>
+          <button id="logout" class="write-btn">Logout</button>
         </section>
       </header>
       <section>
@@ -37,18 +35,36 @@
             <p class="form-title">Write A Blog</p>
             <form action="" class="main-form">
               <div>
-                <input type="text" placeholder="title" class="input" />
+                <input
+                  type="text"
+                  placeholder="title"
+                  class="input"
+                  id="title"
+                  value="basic js"
+                />
               </div>
               <div>
                 <textarea
+                  id="description"
                   type="text"
                   class="input"
                   placeholder="description"
                   rows="7"
-                ></textarea>
+                >
+javascript is a language</textarea
+                >
               </div>
               <div>
-                <button class="btn-save">
+                <input
+                  type="text"
+                  placeholder="image url"
+                  id="url"
+                  class="input"
+                  value="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg"
+                />
+              </div>
+              <div>
+                <button type="button" id="save-blog" class="btn-save">
                   Save
 
                   <i class="fa fa-save"></i>
@@ -67,5 +83,6 @@
         </section>
       </section>
     </main>
+    <script src="./js/write-blog.js"></script>
   </body>
 </html>
